@@ -10,9 +10,9 @@
 // }
 
 
-export default function AboutPage() { 
+export default function AdventurePage() { 
  return (
- <div className="About">
+ <div className="Adventure">
  <h3>The Wanaka Playground</h3>
 
  </div>

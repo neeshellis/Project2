@@ -1,20 +1,24 @@
 
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
-import AboutPage from '../pages/AboutPage'
+import AccommodationPage from '../pages/AccommodationPage'
+import AdventuresPage from '../pages/Adventures'
+import ReviewsPage from '../pages/ReviewsPage'
 import ContactPage from '../pages/ContactPage'
-import PricesPage from '../pages/PricesPage'
+
 
 
 export default function AppRoutes() {
 
     return (
+        
         <Routes>
             <Route path='/home' element={<HomePage/>}/>
-            <Route path='/about' element={<AboutPage/>}/>
-             <Route path='/prices' element={<PricesPage/>}/>
-               <Route path='/contact' element={<ContactPage/>}/>
+            <Route path='/accommodation' element={<AccommodationPage/>}/>
+            <Route path='/adventures' element={<AdventuresPage/>}/>
+            <Route path='/reviews' element={<ReviewsPage/>}/>
+            <Route path='/contact' element={<ContactPage/>}/>
         </Routes>
             )
 }

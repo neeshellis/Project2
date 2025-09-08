@@ -3,6 +3,12 @@ import { useState } from 'react';
 //import viteLogo from '/vite.svg';
 import './App.css';
 import AppRoutes from './routes/AppRoutes';
+//import { UserProvider } from "./context/UserContext";
+import NavBar from './components/NavBar';
+import MyThemeProvider from './context/MyThemeProvider';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,11 +39,19 @@ function App() {
     // </>
 
 return (
-   
+    
+ <div className="app-container">
+    <MyThemeProvider>
+       {/* <UserProvider> */}
+      <NavBar />  
      <AppRoutes />
-
+     {/* </UserProvider> */}
+    </MyThemeProvider>
+ </div>
 )
 }
+         
+
 
 export default App
 
