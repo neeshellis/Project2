@@ -10,6 +10,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+// import LoginForm from '../components/LoginForm';
 
 export default function NavBar() {
   // Add state for menu functionality
@@ -92,7 +94,6 @@ export default function NavBar() {
             
           </Typography>
           
-          
           <Button 
             color="inherit" 
             component={NavLink} 
@@ -152,6 +153,17 @@ export default function NavBar() {
           >
             Contact
           </Button>
+<div>
+              <IconButton >
+                <AccountCircle />
+              </IconButton>
+          </div>
+
+
+
+
+
+
         </Toolbar>
       </AppBar>
     </Box>
